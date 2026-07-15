@@ -10,7 +10,7 @@ Also added code to read env vars to activate verification
 3. added _build_conversation_for_verifier method to build conversation history for the verifier
 4. added _strip_thinking method to clean model output for the verifier. integrated this in Orchestrator.initialize()
 5. Made changes to orchestrator.step() function in order to integrate the tool_call_verifier
-6. 
+6. Prefer an explicitly passed tool_call_verifier over env-driven self-instantiation, and include the telecom-workflow domain
 """
 
 import json
@@ -139,9 +139,15 @@ class BaseOrchestrator(ABC, Generic[BaseAgentT, BaseUserT, TrajectoryItemT]):
         self.task = task
         self.seed = seed
         self.simulation_id = simulation_id or str(uuid.uuid4())
-        # self.tool_call_verifier = tool_call_verifier
-        self.tool_call_verifier = None
-        if os.getenv("TAU2_VERIFIER", "1") != "0" and domain in ("airline", "retail", "telecom"):
+        # Prefer an explicitly provided verifier (e.g. from build.py when
+        # `enable_tool_call_verifier` is set); otherwise fall back to the
+        # env-driven default so behavior is unchanged when none is passed.
+        self.tool_call_verifier = tool_call_verifier
+        if (
+            self.tool_call_verifier is None
+            and os.getenv("TAU2_VERIFIER", "1") != "0"
+            and domain in ("airline", "retail", "telecom", "telecom-workflow")
+        ):
             from tau2.verifier.verifier import PolicyVerifier
             self.tool_call_verifier = PolicyVerifier(db=environment.tools.db, domain=domain)
 
