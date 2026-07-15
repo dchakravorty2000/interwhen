@@ -1,0 +1,22 @@
+Stamp_21 > Stamp_day
+_ == "united states government"
+_ \== "united states government"
+agent_(alice_employed,_)
+atom_prefix(_,"state of ")
+patient_(alice_employed,_)
+purpose_(alice_employed,"agricultural labor")
+s3306_c_10(alice_employed,_,_,"2017-01-01")
+s3306_c_10_A(alice_employed,_,_,"2017-01-01")
+s3306_c_10_B(alice_employed,_,_,"2017-01-01")
+s3306_c_11(alice_employed,_)
+s3306_c_13(alice_employed,_,_,"2017-01-01")
+s3306_c_16(alice_employed,_)
+s3306_c_1_B(alice_employed,_)
+s3306_c_5(alice_employed,_,_,"2017-01-01")
+s3306_c_5_A(alice_employed,_,_,"2017-01-01")
+s3306_c_5_B(alice_employed,_,_,"2017-01-01")
+s3306_c_6(alice_employed)
+s3306_c_7(alice_employed,_)
+s3306_c_A(alice_employed,_,_)
+s3306_c_B(alice_employed,_,_,baltimore)
+service_(alice_employed)

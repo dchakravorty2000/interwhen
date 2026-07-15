@@ -1,0 +1,49 @@
+{
+  "s63_b_1(alice,2017,4000)": {
+    "op": "AND",
+    "children": [
+      "s63_c(alice,2017,4000)"
+    ]
+  },
+  "s63_c(alice,2017,4000)": {
+    "op": "AND",
+    "children": [
+      "s63_c_1(alice,2017,4000)"
+    ]
+  },
+  "s63_c_1(alice,2017,4000)": {
+    "op": "OR",
+    "children": [
+      "s63_c_6(alice,2017,4000)",
+      "s63_c_6(alice,2017,_)",
+      "s63_c_1_B(alice,2017,3000)",
+      "NOT s63_c_6(alice,2017,_)"
+    ]
+  },
+  "s63_c_1_B(alice,2017,3000)": {
+    "op": "AND",
+    "children": [
+      "s63_c_3(alice,3000,2017)"
+    ]
+  },
+  "s63_c_2_A_ii(alice,2017)": {
+    "op": "AND",
+    "children": [
+      "s2_a(alice,_,2017)"
+    ]
+  },
+  "s63_c_3(alice,3000,2017)": {
+    "op": "AND",
+    "children": [
+      "s63_f(alice,3000,2017)"
+    ]
+  },
+  "s63_c_6(alice,2017,4000)": {
+    "op": "AND",
+    "children": [
+      "s63_c_6_B(alice,2017)",
+      "s63_c_6_D(alice,2017)",
+      "4000 is 0"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "s152(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "var(bob)",
+      "s152_b_1(bob,_,2019)",
+      "s152_b_2(bob,_,_,2019)",
+      "bob \\== bob",
+      "NOT s152_b_1(bob,_,2019)",
+      "NOT s152_b_2(bob,_,_,2019)"
+    ]
+  },
+  "s152_a_1(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c(bob,bob,2019)"
+    ]
+  },
+  "s152_b(bob,bob,2019)": {
+    "op": "OR",
+    "children": [
+      "s152_b_1(bob,_,2019)",
+      "s152_b_2(bob,_,_,2019)"
+    ]
+  },
+  "s152_c(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1(bob,bob,2019)"
+    ]
+  },
+  "s152_c_1(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1_C(bob,bob,2019)",
+      "s152_c_1_E(bob,_,2019)"
+    ]
+  },
+  "s152_c_1_C(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_3(bob,bob,2019)"
+    ]
+  },
+  "s152_c_1_E(bob,_,2019)": {
+    "op": "AND",
+    "children": []
+  },
+  "s152_c_3(bob,bob,2019)": {
+    "op": "AND",
+    "children": [
+      "is_descendent_of(bob,bob,_,_)"
+    ]
+  },
+  "s152_d_1_D(bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c(bob,_,2019)",
+      "NOT s152_c(bob,_,2019)"
+    ]
+  }
+}

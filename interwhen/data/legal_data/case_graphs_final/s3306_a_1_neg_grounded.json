@@ -1,0 +1,84 @@
+{
+  "s3306_a(alice,2018)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_1(alice,2018)",
+      "s3306_a_2(alice,2018)",
+      "s3306_a_3(alice,alice_employer,3200,2018)"
+    ]
+  },
+  "s3306_a_1(alice,2018)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_1_A(alice,2018,3200)"
+    ]
+  },
+  "s3306_a_2(alice,2018)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_2_A(alice,2018,3200,alice_employer)"
+    ]
+  },
+  "s3306_a_2_A(alice,2018,3200,alice_employer)": {
+    "op": "AND",
+    "children": [
+      "findall(",
+      "Amount_service",
+      "alice_employer",
+      "3200 >= 20000"
+    ]
+  },
+  "s3306_a_3(alice,alice_employer,3200,2018)": {
+    "op": "AND",
+    "children": [
+      "findall(",
+      "Amount_service",
+      "alice_employer",
+      "3200 >= 1000"
+    ]
+  },
+  "s3306_c_1(alice_employer,2018)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employer,\"agricultural labor\")",
+      "type_(alice_employer,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_1_A(alice_employer,alice,2018)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)",
+      "nonvar(2018)"
+    ]
+  },
+  "s3306_c_6(alice_employer)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "alice == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "atom_prefix(alice,\"state of \")"
+    ]
+  },
+  "s3306_c_11(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)",
+      "alice \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)"
+    ]
+  }
+}

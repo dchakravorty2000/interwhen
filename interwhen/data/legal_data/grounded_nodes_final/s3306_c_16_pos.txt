@@ -1,0 +1,11 @@
+_ == "united states government"
+_ \== "united states government"
+agent_(imf_is_an_international_organization,_)
+atom_prefix(_,"state of ")
+international_organization_(imf_is_an_international_organization)
+patient_(alice_employed,_)
+s3306_c_11(alice_employed,_)
+s3306_c_16(alice_employed,_)
+s3306_c_6(alice_employed)
+s3306_c_7(alice_employed,_)
+service_(alice_employed)

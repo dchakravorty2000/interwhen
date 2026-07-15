@@ -1,0 +1,95 @@
+{
+  "s152(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "var(bob)",
+      "s152_b_1(bob,_,2015)",
+      "s152_b_2(alice,_,_,2015)",
+      "alice \\== bob",
+      "NOT s152_b_1(bob,_,2015)",
+      "NOT s152_b_2(alice,_,_,2015)"
+    ]
+  },
+  "s152_a_1(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c(alice,bob,2015)"
+    ]
+  },
+  "s152_b(alice,bob,2015)": {
+    "op": "OR",
+    "children": [
+      "s152_b_1(bob,_,2015)",
+      "s152_b_2(alice,_,_,2015)"
+    ]
+  },
+  "s152_c(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1(alice,bob,2015)"
+    ]
+  },
+  "s152_c_1(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1_C(alice,bob,2015)"
+    ]
+  },
+  "s152_c_1_C(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_3(alice,bob,2015)"
+    ]
+  },
+  "s152_c_3(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "is_descendent_of(alice,bob,_,_)"
+    ]
+  },
+  "s152_d_1_D(alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c(alice,_,2015)",
+      "NOT s152_c(alice,_,2015)"
+    ]
+  },
+  "s152_d_2(alice,bob,2015,_,_)": {
+    "op": "OR",
+    "children": [
+      "s152_d_2_A(alice,bob,_,_)",
+      "s152_d_2_B(alice,bob,_,_)",
+      "s152_d_2_C(alice,bob,_,_)",
+      "s152_d_2_D(alice,bob,_,_)",
+      "s152_d_2_G(alice,bob,_,_)",
+      "s152_d_2_H(alice,bob,2015,_,_,_)"
+    ]
+  },
+  "s152_d_2_B(alice,bob,_,_)": {
+    "op": "AND",
+    "children": [
+      "is_sibling_of(alice,bob,_,_)",
+      "is_stepsibling_of(alice,bob,_,_)"
+    ]
+  },
+  "s152_d_2_D(alice,bob,_,_)": {
+    "op": "AND",
+    "children": [
+      "is_stepparent_of(alice,bob,_,_)"
+    ]
+  },
+  "s152_d_2_G(alice,bob,_,_)": {
+    "op": "AND",
+    "children": [
+      "is_child_in_law_of(alice,bob,_,_)",
+      "is_parent_in_law_of(alice,bob,_,_)",
+      "is_sibling_in_law_of(alice,bob,_,_)"
+    ]
+  },
+  "s152_d_2_H(alice,bob,2015,_,_,_)": {
+    "op": "AND",
+    "children": [
+      "alice \\== bob"
+    ]
+  }
+}

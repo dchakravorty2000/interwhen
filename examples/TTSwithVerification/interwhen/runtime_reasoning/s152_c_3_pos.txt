@@ -1,0 +1,16 @@
+To determine if Bob satisfies section 152(c)(3), we must evaluate the two conditions set forth in that specific paragraph:
+
+1.  **Is the individual younger than the taxpayer?**
+    *   Alice (the taxpayer) was born on January 10, 1992.
+    *   Bob was born on January 31, 2014.
+    *   Since 2014 is after 1992, Bob is younger than Alice. This condition is met.
+
+2.  **Is the individual less than 25 years old at the end of the taxable year?**
+    *   The taxable year in question is 2019.
+    *   Bob was born on January 31, 2014.
+    *   At the end of the taxable year (December 31, 2019), Bob would be 5 years old.
+    *   Since 5 is less than 25, this condition is met.
+
+Because both requirements of section 152(c)(3) are satisfied by the facts provided, the hypothesis that Bob satisfies section 152(c)(3) for the year 2019 follows from the case facts.
+
+Entailment

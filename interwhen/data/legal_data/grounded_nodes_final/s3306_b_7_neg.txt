@@ -1,0 +1,23 @@
+_ \== "cash"
+agent_(alice_employer,bob)
+agent_(alice_pays_bob,alice)
+agent_(alice_runs_a_factory,alice)
+alice == "united states government"
+alice \== "united states government"
+atom_prefix(alice,"state of ")
+business_(alice_runs_a_factory)
+means_(alice_pays_bob,_)
+patient_(alice_employer,alice)
+patient_(alice_pays_bob,bob)
+purpose_(alice_employer,"agricultural labor")
+purpose_(alice_pays_bob,alice_employer)
+s3306_b_11(alice_pays_bob,alice_employer,_)
+s3306_b_7(alice_pays_bob,alice_employer,alice,bob,_,_)
+s3306_c_11(alice_employer,alice)
+s3306_c_16(alice_employer,alice)
+s3306_c_1_B(alice_employer,bob)
+s3306_c_6(alice_employer)
+s3306_c_7(alice_employer,alice)
+s3306_c_A(alice_employer,alice,bob)
+service_(alice_employer)
+type_(alice_runs_a_factory,_)

@@ -1,0 +1,13 @@
+2000 is 0
+NOT s63_c_6(alice,2017,_)
+between(2018,2025,2017)
+s151_individual(alice,4000,_,_,2017)
+s2_a(alice,_,2017)
+s63_b_1(alice,2017,2000)
+s63_c(alice,2017,2000)
+s63_c_1(alice,2017,2000)
+s63_c_2_A_ii(alice,2017)
+s63_c_6(alice,2017,2000)
+s63_c_6(alice,2017,_)
+s63_c_6_B(alice,2017)
+s63_c_6_D(alice,2017)

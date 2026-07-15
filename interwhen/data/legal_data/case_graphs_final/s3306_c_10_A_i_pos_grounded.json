@@ -1,0 +1,115 @@
+{
+  "s3306_c_A(alice_employed,\"johns hopkins university\",alice)": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,\"johns hopkins university\")"
+    ]
+  },
+  "s3306_c_B(alice_employed,\"johns hopkins university\",alice,baltimore)": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,\"johns hopkins university\")"
+    ]
+  },
+  "s3306_c_1_B(alice_employed,alice)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employed,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_5(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")": {
+    "op": "OR",
+    "children": [
+      "s3306_c_5_A(alice_employed,alice,\"johns hopkins university\",\"2017-01-01\")",
+      "s3306_c_5_B(alice_employed,alice,\"johns hopkins university\",\"2017-01-01\")"
+    ]
+  },
+  "s3306_c_5_A(alice_employed,alice,\"johns hopkins university\",\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,\"johns hopkins university\")"
+    ]
+  },
+  "s3306_c_5_B(alice_employed,alice,\"johns hopkins university\",\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "Stamp_21 > Stamp_day"
+    ]
+  },
+  "s3306_c_6(alice_employed)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "\"johns hopkins university\" == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "atom_prefix(\"johns hopkins university\",\"state of \")"
+    ]
+  },
+  "s3306_c_10(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")": {
+    "op": "OR",
+    "children": [
+      "s3306_c_10_A(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")",
+      "s3306_c_10_B(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")"
+    ]
+  },
+  "s3306_c_10_A(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "agent_(alice_employed,alice)",
+      "educational_institution_(hopkins_is_a_university)",
+      "agent_(hopkins_is_a_university,\"johns hopkins university\")",
+      "s3306_c_10_A_i(alice,\"johns hopkins university\",\"2017-01-01\")"
+    ]
+  },
+  "s3306_c_10_A_i(alice,\"johns hopkins university\",\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "enrollment_(alice_goes_to_hopkins)",
+      "agent_(alice_goes_to_hopkins,alice)",
+      "patient_(alice_goes_to_hopkins,\"johns hopkins university\")"
+    ]
+  },
+  "s3306_c_10_B(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "agent_(alice_employed,alice)"
+    ]
+  },
+  "s3306_c_11(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "\"johns hopkins university\" \\== \"united states government\""
+    ]
+  },
+  "s3306_c_13(alice_employed,\"johns hopkins university\",alice,\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "agent_(alice_employed,alice)"
+    ]
+  },
+  "s3306_c_16(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,\"johns hopkins university\")"
+    ]
+  }
+}

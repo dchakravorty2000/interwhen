@@ -8,3 +8,4 @@ from .thinkingPhaseVerifierSpatialMap import ThinkingPhaseStepVerifierSpatialMap
 from .zebralogic_monitor import ZebraLogicMonitor
 from .verina_code_verifier import StepVerifierVerinaMonitor
 from .verina_spec_verifier import StepVerifierVerinaSpecMonitor
+from .legal_reasoning_monitor import LegalReasoningMonitor

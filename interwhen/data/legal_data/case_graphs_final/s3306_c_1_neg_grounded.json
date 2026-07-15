@@ -1,0 +1,9 @@
+{
+  "s3306_c_1(alice_employer,2017)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employer,\"agricultural labor\")",
+      "type_(alice_employer,\"agricultural labor\")"
+    ]
+  }
+}

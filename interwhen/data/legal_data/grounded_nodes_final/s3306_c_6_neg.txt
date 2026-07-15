@@ -1,0 +1,3 @@
+s3306_c_1_B(alice_employed,alice)
+s3306_c_6(alice_employed)
+purpose_(alice_employed,"agricultural labor")

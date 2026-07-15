@@ -1,0 +1,138 @@
+{
+  "s3306_a(alice,2017)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_1(alice,2017)",
+      "s3306_a_2(alice,2017)"
+    ]
+  },
+  "s3306_a_1(alice,2017)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_1_B(alice,_,_,2017)"
+    ]
+  },
+  "s3306_a_2(alice,2017)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_2_B(alice,_,_,_,_,2017)"
+    ]
+  },
+  "s3306_c(_,alice,_,_,2017)": {
+    "op": "AND",
+    "children": [
+      "service_(_)"
+    ]
+  },
+  "s3306_c_A(_,alice,_)": {
+    "op": "AND",
+    "children": [
+      "agent_(_,_)",
+      "patient_(_,alice)"
+    ]
+  },
+  "s3306_c_1(_,2017)": {
+    "op": "AND",
+    "children": [
+      "purpose_(_,\"agricultural labor\")",
+      "type_(_,\"agricultural labor\")",
+      "s3306_c_1_B(_,_)"
+    ]
+  },
+  "s3306_c_1_A(_,alice,2017)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "patient_(_,alice)",
+      "nonvar(2017)"
+    ]
+  },
+  "s3306_c_1_B(_,_)": {
+    "op": "AND",
+    "children": [
+      "purpose_(_,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_5(_,alice,_,_)": {
+    "op": "OR",
+    "children": [
+      "s3306_c_5_A(_,_,alice,_)",
+      "s3306_c_5_B(_,_,alice,_)"
+    ]
+  },
+  "s3306_c_5_A(_,_,alice,_)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "agent_(_,_)",
+      "patient_(_,alice)"
+    ]
+  },
+  "s3306_c_5_B(_,_,alice,_)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "agent_(_,_)",
+      "patient_(_,alice)",
+      "Stamp_21 > Stamp_day"
+    ]
+  },
+  "s3306_c_6(_)": {
+    "op": "AND",
+    "children": [
+      "patient_(_,alice)",
+      "alice == \"united states government\""
+    ]
+  },
+  "s3306_c_7(_,alice)": {
+    "op": "AND",
+    "children": [
+      "patient_(_,alice)",
+      "atom_prefix(alice,\"state of \")"
+    ]
+  },
+  "s3306_c_10(_,alice,_,_)": {
+    "op": "OR",
+    "children": [
+      "s3306_c_10_A(_,alice,_,_)",
+      "s3306_c_10_B(_,alice,_,_)"
+    ]
+  },
+  "s3306_c_10_A(_,alice,_,_)": {
+    "op": "AND",
+    "children": [
+      "patient_(_,alice)",
+      "agent_(_,_)"
+    ]
+  },
+  "s3306_c_10_B(_,alice,_,_)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "patient_(_,alice)",
+      "agent_(_,_)"
+    ]
+  },
+  "s3306_c_11(_,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "patient_(_,alice)",
+      "alice \\== \"united states government\""
+    ]
+  },
+  "s3306_c_13(_,alice,_,_)": {
+    "op": "AND",
+    "children": [
+      "patient_(_,alice)",
+      "agent_(_,_)"
+    ]
+  },
+  "s3306_c_16(_,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(_)",
+      "patient_(_,alice)"
+    ]
+  }
+}

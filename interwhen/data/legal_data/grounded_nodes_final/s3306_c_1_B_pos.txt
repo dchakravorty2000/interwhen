@@ -1,0 +1,4 @@
+agent_(bob_is_american,_)
+citizenship_(bob_is_american)
+purpose_(alice_employer,"agricultural labor")
+s3306_c_1_B(alice_employer,_)

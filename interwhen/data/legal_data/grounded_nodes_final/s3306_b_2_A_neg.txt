@@ -1,0 +1,5 @@
+purpose_(retirement_fund,"make provisions for employees in case of accident disability")
+purpose_(retirement_fund,"make provisions for employees in case of death")
+purpose_(retirement_fund,"make provisions for employees in case of sickness")
+s3306_b_2_A(retirement_fund)
+s3306_b_2_C(retirement_fund)

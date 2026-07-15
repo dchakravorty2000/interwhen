@@ -1,0 +1,12 @@
+{
+  "s3306_c_1_B(alice_employed,alice)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employed,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_6(alice_employed)": {
+    "op": "AND",
+    "children": []
+  }
+}

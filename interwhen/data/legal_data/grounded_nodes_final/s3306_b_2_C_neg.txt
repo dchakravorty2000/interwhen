@@ -1,0 +1,5 @@
+purpose_(alice_pays_retirement,"make provisions for employees in case of accident disability")
+purpose_(alice_pays_retirement,"make provisions for employees in case of death")
+purpose_(alice_pays_retirement,"make provisions for employees in case of sickness")
+s3306_b_2_A(alice_pays_retirement)
+s3306_b_2_C(alice_pays_retirement)

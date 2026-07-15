@@ -1,0 +1,15 @@
+{
+  "s3306_b_2_A(alice_pays_retirement)": {
+    "op": "OR",
+    "children": [
+      "purpose_(alice_pays_retirement,\"make provisions for employees in case of sickness\")",
+      "purpose_(alice_pays_retirement,\"make provisions for employees in case of accident disability\")"
+    ]
+  },
+  "s3306_b_2_C(alice_pays_retirement)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_pays_retirement,\"make provisions for employees in case of death\")"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+To determine whether Bob satisfies section 152(c)(3) for the taxable year 2019, we must evaluate the two requirements set forth in that paragraph:
+
+1.  **Is the individual younger than the taxpayer?**
+    Alice (the taxpayer) was born on January 10, 1992. Bob was born on January 31, 1984. Since Bob was born before Alice, he is older than her, not younger. Therefore, he fails this part of the requirement.
+
+2.  **Is the individual less than 25 years old at the end of the taxable year?**
+    The taxable year in question is 2019. Bob was born on January 31, 1984. By December 31, 2019 (the end of the taxable year), Bob would be 35 years old. Since 35 is not less than 25, he fails this part of the requirement as well.
+
+Because Bob fails both components of section 152(c)(3) (he is older than Alice and he is over 25 years old at the end of 2019), he does not satisfy that section. The hypothesis states that he does satisfy it, which directly contradicts the facts provided under the statute.
+
+Contradiction

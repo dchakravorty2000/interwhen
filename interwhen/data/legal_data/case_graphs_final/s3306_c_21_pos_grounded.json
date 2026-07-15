@@ -1,0 +1,19 @@
+{
+  "s3306_c_1_B(alice_employed,alice)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employed,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_21(alice_employed,alice,_,\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "penal_institution_(jail_is_a_penal_institution)",
+      "agent_(jail_is_a_penal_institution,_)",
+      "incarceration_(alice_goes_to_jail)",
+      "agent_(alice_goes_to_jail,alice)",
+      "patient_(alice_goes_to_jail,_)"
+    ]
+  }
+}

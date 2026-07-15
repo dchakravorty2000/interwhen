@@ -1,0 +1,109 @@
+{
+  "s3306_c_A(alice_employed,_,alice)": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,_)"
+    ]
+  },
+  "s3306_c_B(alice_employed,_,alice,\"baltimore\")": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,_)"
+    ]
+  },
+  "s3306_c_1_B(alice_employed,alice)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employed,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_5(alice_employed,_,alice,\"2017-03-15\")": {
+    "op": "OR",
+    "children": [
+      "s3306_c_5_A(alice_employed,alice,_,\"2017-03-15\")",
+      "s3306_c_5_B(alice_employed,alice,_,\"2017-03-15\")"
+    ]
+  },
+  "s3306_c_5_A(alice_employed,alice,_,\"2017-03-15\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,_)"
+    ]
+  },
+  "s3306_c_5_B(alice_employed,alice,_,\"2017-03-15\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "agent_(alice_employed,alice)",
+      "patient_(alice_employed,_)",
+      "Stamp_21 > Stamp_day"
+    ]
+  },
+  "s3306_c_6(alice_employed)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "_ == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "atom_prefix(_,\"state of \")"
+    ]
+  },
+  "s3306_c_10(alice_employed,_,alice,\"2017-03-15\")": {
+    "op": "OR",
+    "children": [
+      "s3306_c_10_A(alice_employed,_,alice,\"2017-03-15\")",
+      "s3306_c_10_B(alice_employed,_,alice,\"2017-03-15\")"
+    ]
+  },
+  "s3306_c_10_A(alice_employed,_,alice,\"2017-03-15\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "agent_(alice_employed,alice)"
+    ]
+  },
+  "s3306_c_10_B(alice_employed,_,alice,\"2017-03-15\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,_)",
+      "agent_(alice_employed,alice)",
+      "hospital_(hopkins_is_a_hospital)",
+      "agent_(hopkins_is_a_hospital,_)",
+      "medical_patient_(alice_goes_to_hopkins)",
+      "agent_(alice_goes_to_hopkins,alice)",
+      "patient_(alice_goes_to_hopkins,_)"
+    ]
+  },
+  "s3306_c_11(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,_)",
+      "_ \\== \"united states government\""
+    ]
+  },
+  "s3306_c_13(alice_employed,_,alice,\"2017-03-15\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "agent_(alice_employed,alice)"
+    ]
+  },
+  "s3306_c_16(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,_)"
+    ]
+  }
+}

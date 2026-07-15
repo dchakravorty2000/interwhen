@@ -1,0 +1,9 @@
+alice == "united states government"
+alice \== "united states government"
+atom_prefix(alice,"state of ")
+patient_(alice_employer,alice)
+s3306_c_11(alice_employer,alice)
+s3306_c_16(alice_employer,alice)
+s3306_c_6(alice_employer)
+s3306_c_7(alice_employer,alice)
+service_(alice_employer)

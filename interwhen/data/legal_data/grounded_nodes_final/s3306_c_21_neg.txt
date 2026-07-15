@@ -1,0 +1,7 @@
+agent_(alice_employed,alice)
+agent_(alice_goes_to_hospital,alice)
+incarceration_(alice_goes_to_hospital)
+patient_(alice_goes_to_hospital,_)
+purpose_(alice_employed,"agricultural labor")
+s3306_c_1_B(alice_employed,alice)
+s3306_c_21(alice_employed,alice,_,"2017-01-01")

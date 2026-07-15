@@ -1,0 +1,9 @@
+{
+  "s152_d_1_D(alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c(alice,_,2015)",
+      "NOT s152_c(alice,_,2015)"
+    ]
+  }
+}

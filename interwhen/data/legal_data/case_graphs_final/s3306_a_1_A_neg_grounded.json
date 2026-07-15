@@ -1,0 +1,31 @@
+{
+  "s3306_c_6(bob_works)": {
+    "op": "AND",
+    "children": [
+      "patient_(bob_works,alice)",
+      "alice == \"united states government\""
+    ]
+  },
+  "s3306_c_7(bob_works,alice)": {
+    "op": "AND",
+    "children": [
+      "patient_(bob_works,alice)",
+      "atom_prefix(alice,\"state of \")"
+    ]
+  },
+  "s3306_c_11(bob_works,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(bob_works)",
+      "patient_(bob_works,alice)",
+      "alice \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(bob_works,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(bob_works)",
+      "patient_(bob_works,alice)"
+    ]
+  }
+}

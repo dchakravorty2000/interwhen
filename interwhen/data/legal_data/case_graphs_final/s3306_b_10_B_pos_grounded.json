@@ -1,0 +1,15 @@
+{
+  "s3306_b_2_A(disability_plan)": {
+    "op": "OR",
+    "children": [
+      "purpose_(disability_plan,\"make provisions for employees in case of sickness\")",
+      "purpose_(disability_plan,\"make provisions for employees in case of accident disability\")"
+    ]
+  },
+  "s3306_b_2_C(disability_plan)": {
+    "op": "AND",
+    "children": [
+      "purpose_(disability_plan,\"make provisions for employees in case of death\")"
+    ]
+  }
+}

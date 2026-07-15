@@ -1,0 +1,3 @@
+purpose_(alice_employer,"agricultural labor")
+s3306_c_1(alice_employer,2017)
+type_(alice_employer,"agricultural labor")

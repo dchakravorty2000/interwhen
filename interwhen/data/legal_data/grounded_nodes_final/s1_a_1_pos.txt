@@ -1,0 +1,8 @@
+NOT s152(spouse,_,2017)
+NOT s63_b(alice,2017,_,_)
+between(2018,2025,2017)
+gross_income(spouse,2017,0)
+s152(spouse,_,2017)
+s2_a(alice,_,2017)
+s63_b(alice,2017,_,_)
+s7703(alice,spouse,_,2017)

@@ -1,0 +1,13 @@
+"johns hopkins university" == "united states government"
+"johns hopkins university" \== "united states government"
+agent_(alice_goes_to_hopkins,alice)
+atom_prefix("johns hopkins university","state of ")
+enrollment_(alice_goes_to_hopkins)
+patient_(alice_employed,"johns hopkins university")
+patient_(alice_goes_to_hopkins,"johns hopkins university")
+s3306_c_10_A_i(alice,"johns hopkins university","2017-01-01")
+s3306_c_11(alice_employed,"johns hopkins university")
+s3306_c_16(alice_employed,"johns hopkins university")
+s3306_c_6(alice_employed)
+s3306_c_7(alice_employed,"johns hopkins university")
+service_(alice_employed)

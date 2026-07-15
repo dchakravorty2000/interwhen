@@ -1,0 +1,8 @@
+agent_(_,alice)
+between(2018,2025,2017)
+first_day_year(2017,"2017-12-31")
+joint_return_(_)
+s2_a(alice,_,2017)
+s63_c_2_A_i(alice,_,2017)
+s63_c_2_A_ii(alice,2017)
+start_(_,"2017-12-31")

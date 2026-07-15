@@ -1,0 +1,59 @@
+{
+  "s152(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "var(alice)",
+      "s152_b_1(alice,_,2019)",
+      "s152_b_2(bob,_,_,2019)",
+      "bob \\== alice",
+      "NOT s152_b_1(alice,_,2019)",
+      "NOT s152_b_2(bob,_,_,2019)"
+    ]
+  },
+  "s152_a_1(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c(bob,alice,2019)"
+    ]
+  },
+  "s152_b(bob,alice,2019)": {
+    "op": "OR",
+    "children": [
+      "s152_b_1(alice,_,2019)",
+      "s152_b_2(bob,_,_,2019)"
+    ]
+  },
+  "s152_c(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1(bob,alice,2019)"
+    ]
+  },
+  "s152_c_1(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1_C(bob,alice,2019)"
+    ]
+  },
+  "s152_c_1_C(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c_3(bob,alice,2019)"
+    ]
+  },
+  "s152_c_3(bob,alice,2019)": {
+    "op": "AND",
+    "children": [
+      "birth_(alice_is_born)",
+      "agent_(alice_is_born,bob)",
+      "is_descendent_of(bob,alice,_,_)"
+    ]
+  },
+  "s152_d_1_D(bob,2019)": {
+    "op": "AND",
+    "children": [
+      "s152_c(bob,_,2019)",
+      "NOT s152_c(bob,_,2019)"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "s3306_c_6(alice_employed)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "_ == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,_)",
+      "atom_prefix(_,\"state of \")"
+    ]
+  },
+  "s3306_c_11(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,_)",
+      "_ \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(alice_employed,_)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,_)",
+      "international_organization_(imf_is_an_international_organization)",
+      "agent_(imf_is_an_international_organization,_)"
+    ]
+  }
+}

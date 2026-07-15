@@ -1,0 +1,5 @@
+purpose_(disability_plan,"make provisions for employees in case of accident disability")
+purpose_(disability_plan,"make provisions for employees in case of death")
+purpose_(disability_plan,"make provisions for employees in case of sickness")
+s3306_b_2_A(disability_plan)
+s3306_b_2_C(disability_plan)

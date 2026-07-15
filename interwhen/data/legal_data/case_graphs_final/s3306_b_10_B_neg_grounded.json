@@ -1,0 +1,53 @@
+{
+  "s3306_b_2_A(_)": {
+    "op": "OR",
+    "children": [
+      "purpose_(_,\"make provisions for employees in case of sickness\")",
+      "purpose_(_,\"make provisions for employees in case of accident disability\")"
+    ]
+  },
+  "s3306_b_2_C(_)": {
+    "op": "AND",
+    "children": [
+      "purpose_(_,\"make provisions for employees in case of death\")"
+    ]
+  },
+  "s3306_b_10_B(alice,alice_pays,_)": {
+    "op": "AND",
+    "children": [
+      "means_(alice_pays,_)",
+      "plan_(_)",
+      "agent_(_,alice)",
+      "purpose_(_,\"make provisions for employees or dependents\")"
+    ]
+  },
+  "s3306_c_6(alice_employer)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "alice == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "atom_prefix(alice,\"state of \")"
+    ]
+  },
+  "s3306_c_11(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)",
+      "alice \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)"
+    ]
+  }
+}

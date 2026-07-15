@@ -1,0 +1,52 @@
+{
+  "s68_b(alice,300000,2016)": {
+    "op": "OR",
+    "children": [
+      "s68_b_1_A(alice,_,_,300000,2016)",
+      "s68_b_1_B(alice,300000,2016)",
+      "s68_b_1_C(alice,300000,2016)",
+      "s68_b_1_D(alice,300000,2016)"
+    ]
+  },
+  "s68_b_1_A(alice,_,_,300000,2016)": {
+    "op": "AND",
+    "children": [
+      "joint_return_(_)",
+      "agent_(_,alice)",
+      "s2_a(_,_,2016)",
+      "amount(\"A\",300000)"
+    ]
+  },
+  "s68_b_1_B(alice,300000,2016)": {
+    "op": "AND",
+    "children": [
+      "s2_b(alice,_,2016)",
+      "amount(\"B\",300000)"
+    ]
+  },
+  "s68_b_1_C(alice,300000,2016)": {
+    "op": "AND",
+    "children": [
+      "s7703(alice,_,_,2016)",
+      "s2_a(alice,_,2016)",
+      "s2_b(alice,_,2016)",
+      "amount(\"C\",300000)",
+      "NOT s7703(alice,_,_,2016)",
+      "NOT s2_a(alice,_,2016)",
+      "NOT s2_b(alice,_,2016)"
+    ]
+  },
+  "s68_b_1_D(alice,300000,2016)": {
+    "op": "AND",
+    "children": [
+      "agent_(_,alice)",
+      "amount(\"D\",300000)"
+    ]
+  },
+  "s68_f(2016)": {
+    "op": "AND",
+    "children": [
+      "between(2018,2025,2016)"
+    ]
+  }
+}

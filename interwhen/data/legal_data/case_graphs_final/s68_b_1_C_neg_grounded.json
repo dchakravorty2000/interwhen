@@ -1,0 +1,41 @@
+{
+  "s68_b(alice,_,2016)": {
+    "op": "OR",
+    "children": [
+      "s68_b_1_B(alice,_,2016)",
+      "s68_b_1_C(alice,_,2016)",
+      "s68_b_1_D(alice,_,2016)"
+    ]
+  },
+  "s68_b_1_B(alice,_,2016)": {
+    "op": "AND",
+    "children": [
+      "s2_b(alice,_,2016)",
+      "amount(\"B\",_)"
+    ]
+  },
+  "s68_b_1_C(alice,_,2016)": {
+    "op": "AND",
+    "children": [
+      "s7703(alice,_,_,2016)",
+      "s2_a(alice,_,2016)",
+      "s2_b(alice,_,2016)",
+      "amount(\"C\",_)",
+      "NOT s7703(alice,_,_,2016)",
+      "NOT s2_a(alice,_,2016)",
+      "NOT s2_b(alice,_,2016)"
+    ]
+  },
+  "s68_b_1_D(alice,_,2016)": {
+    "op": "AND",
+    "children": [
+      "amount(\"D\",_)"
+    ]
+  },
+  "s68_f(2016)": {
+    "op": "AND",
+    "children": [
+      "between(2018,2025,2016)"
+    ]
+  }
+}

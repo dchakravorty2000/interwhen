@@ -1,0 +1,29 @@
+{
+  "s63_c_2_A_ii(alice,2017)": {
+    "op": "AND",
+    "children": [
+      "s2_a(alice,_,2017)"
+    ]
+  },
+  "s63_c_6_A(alice,_,_,2017)": {
+    "op": "AND",
+    "children": [
+      "s7703(alice,_,_,2017)",
+      "deduction_(_)",
+      "agent_(_,alice)",
+      "agent_(_,_)"
+    ]
+  },
+  "s63_f_1_B(alice,_,2017)": {
+    "op": "AND",
+    "children": [
+      "s7703(alice,_,_,2017)"
+    ]
+  },
+  "s63_f_2_B(alice,_,2017)": {
+    "op": "AND",
+    "children": [
+      "s7703(alice,_,_,2017)"
+    ]
+  }
+}

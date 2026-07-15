@@ -1,0 +1,6 @@
+_ \== "cash"
+means_(alice_pays,_)
+purpose_(alice_employer,"agricultural labor")
+purpose_(alice_pays,alice_employer)
+s3306_b_11(alice_pays,alice_employer,_)
+service_(alice_employer)

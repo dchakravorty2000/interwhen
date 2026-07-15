@@ -1,0 +1,57 @@
+{
+  "s152(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "var(alice)",
+      "s152_b_1(alice,_,2015)",
+      "s152_b_2(alice,_,_,2015)",
+      "alice \\== alice",
+      "NOT s152_b_1(alice,_,2015)",
+      "NOT s152_b_2(alice,_,_,2015)"
+    ]
+  },
+  "s152_a_1(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c(alice,alice,2015)"
+    ]
+  },
+  "s152_b(alice,alice,2015)": {
+    "op": "OR",
+    "children": [
+      "s152_b_1(alice,_,2015)",
+      "s152_b_2(alice,_,_,2015)"
+    ]
+  },
+  "s152_c(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1(alice,alice,2015)"
+    ]
+  },
+  "s152_c_1(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_1_C(alice,alice,2015)"
+    ]
+  },
+  "s152_c_1_C(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c_3(alice,alice,2015)"
+    ]
+  },
+  "s152_c_3(alice,alice,2015)": {
+    "op": "AND",
+    "children": [
+      "is_descendent_of(alice,alice,_,_)"
+    ]
+  },
+  "s152_d_1_D(alice,2015)": {
+    "op": "AND",
+    "children": [
+      "s152_c(alice,_,2015)",
+      "NOT s152_c(alice,_,2015)"
+    ]
+  }
+}

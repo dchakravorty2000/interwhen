@@ -1,0 +1,76 @@
+{
+  "s3306_a(alice,_)": {
+    "op": "OR",
+    "children": [
+      "s3306_a_1(alice,_)",
+      "s3306_a_2(alice,_)"
+    ]
+  },
+  "s3306_b_15(alice_pays,alice,charlie,bob,_)": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_pays,alice)",
+      "patient_(alice_pays,charlie)",
+      "death_(bob_dies)",
+      "agent_(bob_dies,bob)"
+    ]
+  },
+  "s3306_c_A(alice_employer,alice,bob)": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employer,bob)",
+      "patient_(alice_employer,alice)"
+    ]
+  },
+  "s3306_c_1(alice_employer,_)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employer,\"agricultural labor\")",
+      "type_(alice_employer,\"agricultural labor\")",
+      "s3306_c_1_B(alice_employer,bob)"
+    ]
+  },
+  "s3306_c_1_A(alice_employer,alice,_)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)",
+      "nonvar(_)"
+    ]
+  },
+  "s3306_c_1_B(alice_employer,bob)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employer,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_6(alice_employer)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "alice == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employer,alice)",
+      "atom_prefix(alice,\"state of \")"
+    ]
+  },
+  "s3306_c_11(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)",
+      "alice \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(alice_employer,alice)": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employer)",
+      "patient_(alice_employer,alice)"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "s63_c_2_A_ii(\"Walter Brown Family Trust II\",1999)": {
+    "op": "AND",
+    "children": [
+      "s2_a(\"Walter Brown Family Trust II\",_,1999)"
+    ]
+  },
+  "s63_c_6_D(\"Walter Brown Family Trust II\",1999)": {
+    "op": "AND",
+    "children": [
+      "business_trust_(wbft_is_a_trust)",
+      "agent_(wbft_is_a_trust,\"Walter Brown Family Trust II\")",
+      "start_(wbft_is_a_trust,_)",
+      "end_(wbft_is_a_trust,_)"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+3200 >= 1000
+3200 >= 20000
+Amount_service
+alice == "united states government"
+alice \== "united states government"
+alice_employer
+atom_prefix(alice,"state of ")
+findall(
+nonvar(2018)
+patient_(alice_employer,alice)
+purpose_(alice_employer,"agricultural labor")
+s3306_a(alice,2018)
+s3306_a_1(alice,2018)
+s3306_a_1_A(alice,2018,3200)
+s3306_a_2(alice,2018)
+s3306_a_2_A(alice,2018,3200,alice_employer)
+s3306_a_3(alice,alice_employer,3200,2018)
+s3306_c_1(alice_employer,2018)
+s3306_c_11(alice_employer,alice)
+s3306_c_16(alice_employer,alice)
+s3306_c_1_A(alice_employer,alice,2018)
+s3306_c_6(alice_employer)
+s3306_c_7(alice_employer,alice)
+service_(alice_employer)
+type_(alice_employer,"agricultural labor")

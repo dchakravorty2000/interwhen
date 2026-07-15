@@ -1,0 +1,39 @@
+{
+  "s3306_c_6(alice_employed)": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "\"johns hopkins university\" == \"united states government\""
+    ]
+  },
+  "s3306_c_7(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "atom_prefix(\"johns hopkins university\",\"state of \")"
+    ]
+  },
+  "s3306_c_10_A_i(alice,\"johns hopkins university\",\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "enrollment_(alice_goes_to_hopkins)",
+      "agent_(alice_goes_to_hopkins,alice)",
+      "patient_(alice_goes_to_hopkins,\"johns hopkins university\")"
+    ]
+  },
+  "s3306_c_11(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,\"johns hopkins university\")",
+      "\"johns hopkins university\" \\== \"united states government\""
+    ]
+  },
+  "s3306_c_16(alice_employed,\"johns hopkins university\")": {
+    "op": "AND",
+    "children": [
+      "service_(alice_employed)",
+      "patient_(alice_employed,\"johns hopkins university\")"
+    ]
+  }
+}

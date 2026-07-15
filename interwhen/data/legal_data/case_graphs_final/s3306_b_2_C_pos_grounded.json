@@ -1,0 +1,15 @@
+{
+  "s3306_b_2_A(retirement_fund)": {
+    "op": "OR",
+    "children": [
+      "purpose_(retirement_fund,\"make provisions for employees in case of sickness\")",
+      "purpose_(retirement_fund,\"make provisions for employees in case of accident disability\")"
+    ]
+  },
+  "s3306_b_2_C(retirement_fund)": {
+    "op": "AND",
+    "children": [
+      "purpose_(retirement_fund,\"make provisions for employees in case of death\")"
+    ]
+  }
+}

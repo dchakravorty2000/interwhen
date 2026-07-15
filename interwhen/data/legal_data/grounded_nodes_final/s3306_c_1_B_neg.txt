@@ -1,0 +1,8 @@
+agent_(alice_is_american,_)
+agent_(bob_migrates_to_usa,_)
+citizenship_(alice_is_american)
+destination_(bob_migrates_to_usa,"usa")
+migration_(bob_migrates_to_usa)
+purpose_(alice_employer,"agricultural labor")
+purpose_(bob_migrates_to_usa,"agricultural labor")
+s3306_c_1_B(alice_employer,_)

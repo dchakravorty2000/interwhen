@@ -1,0 +1,17 @@
+{
+  "s3306_c_1_B(alice_employed,alice)": {
+    "op": "AND",
+    "children": [
+      "purpose_(alice_employed,\"agricultural labor\")"
+    ]
+  },
+  "s3306_c_21(alice_employed,alice,_,\"2017-01-01\")": {
+    "op": "AND",
+    "children": [
+      "agent_(alice_employed,alice)",
+      "incarceration_(alice_goes_to_hospital)",
+      "agent_(alice_goes_to_hospital,alice)",
+      "patient_(alice_goes_to_hospital,_)"
+    ]
+  }
+}

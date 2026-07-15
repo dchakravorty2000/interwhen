@@ -1,0 +1,8 @@
+{
+  "s151_c_applies(alice,bob,2015)": {
+    "op": "AND",
+    "children": [
+      "s152(bob,alice,2015)"
+    ]
+  }
+}

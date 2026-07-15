@@ -1,0 +1,15 @@
+{
+  "s63_c_2_A_ii(bob,2017)": {
+    "op": "AND",
+    "children": [
+      "s2_a(bob,_,2017)"
+    ]
+  },
+  "s63_f_2_A(bob,2017)": {
+    "op": "AND",
+    "children": [
+      "blindness_(alice_is_blind)",
+      "agent_(alice_is_blind,bob)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+_ == "united states government"
+_ \== "united states government"
+agent_(alice_employer,_)
+agent_(bob_is_american,_)
+atom_prefix(_,"state of ")
+citizenship_(bob_is_american)
+patient_(alice_employer,_)
+purpose_(alice_employer,"agricultural labor")
+s3306_c_11(alice_employer,_)
+s3306_c_16(alice_employer,_)
+s3306_c_1_B(alice_employer,_)
+s3306_c_6(alice_employer)
+s3306_c_7(alice_employer,_)
+s3306_c_A(alice_employer,_,_)
+s3306_c_B(alice_employer,_,_,_)
+service_(alice_employer)
